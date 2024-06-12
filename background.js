@@ -43,7 +43,7 @@ browser.menus.create({
 
 function searchIMDB(txt) {
     browser.tabs.create({
-      url: 'http://www.imdb.com/find?s=all&q='+txt
+      url: 'http://www.imdb.com/find?s=all&q='+encodeURIComponent(txt)
     });
 }
 
